@@ -12,7 +12,8 @@ Version: 1.0
     //Inicio do quiz
 	$(document).ready(function(){
 	//Declarando variaveis globais
-		resposta = 'alternativa-B';
+		resposta = $("#js-alt").find(".js-ok").attr("alt");
+		console.log(resposta);
 
 		$(".js-alternativa").on("click", function(e){
 			e.preventDefault();
